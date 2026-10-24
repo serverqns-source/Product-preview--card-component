@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --Green-500: hsl(158, 36%, 37%);
+    --Green-700: hsl(158, 42%, 18%); 
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);  
+}
+
+body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--Cream); 
+        font-size: 14px;   
+}
+
+.tarjeta {
+width: 350px;
+height: 750px;
+margin: 80px auto;
+border-radius: 12px;
+overflow: hidden;
+background-color: var(--White);
+}
+.tarjeta_seccion1__imagen {
+  width: 100%;
+}
+.tarjeta_seccion2__producto {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--Grey);
+  letter-spacing: 3px;
+  margin: 20px 24px 10px 20px;
+}
+
+.tarjeta_seccion2__producto-titulo {
+  font-family: "Fraunces", serif;
+  margin: 0 24px 10px 20px;
+  font-size: 2.1em;
+  line-height: 30px;
+  color: var(--Black);
+}
+.tarjeta_seccion2__producto-descripcion {
+  font-size: 1em;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--Grey);
+  margin: 24px;
+}
+
+.tarjeta_seccion2__producto-precios {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  gap: 16px;
+}
+.tarjeta_seccion2__producto-precio-oferta {
+  font-family: "Fraunces", serif;
+  font-size: 2.2em;
+  color: var(--Green-500);
+}
+.tarjeta_seccion2__producto-precio-original {
+  color: var(--Grey);
+  text-decoration: line-through;
+}
+.tarjeta_seccion2-button-card {
+  width: 296px;
+  height: 50px;
+  display: block;
+  margin: 30px auto;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--White);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Green-500);
+}
+.tarjeta_seccion2-button-card:hover {
+  cursor: pointer;
+  background-color: var(--Green-700);
+}
+.tarjeta_seccion2-button-icon {
+  margin-right: 10px;
+}
+
+@media (min-width: 620px) {
+.tarjeta {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  margin: 160px auto;
+}
+.tarjeta_seccion1 {
+  width: 300px;
+}
+.tarjeta_seccion1__imagen {
+  content: url(./images/image-product-desktop.jpg);
+}
+.tarjeta_seccion2 {
+  width: 300px;
+}
+.tarjeta_seccion2__producto {
+  margin: 30px 24px 16px 24px;
+}
+.tarjeta_seccion2__producto-descripcion {
+  line-height: 26px;
+  margin-bottom: 28px;
+}
+.tarjeta_seccion2__producto-precios {
+  margin-bottom: 28px;
+}
+.tarjeta_seccion2-button-card {
+  width: 240px;
+  margin: 54px 24px 0 24px;
+}
+}
